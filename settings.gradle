@@ -1,0 +1,1 @@
+include ':P2Cloud', ':vitamio', ':VideoCrop', ':VideoCropLibrary', ':mylibrary', ':app'

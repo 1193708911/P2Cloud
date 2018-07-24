@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bac"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/txtBack"
+            android:layout_width="@dimen/size60dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/size10dp"
+            android:text="返回"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size10dp"
+        android:layout_marginTop="@dimen/size20dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size10dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/txtNewsStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size10dp"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/size14sp" />
+
+         <!--   <TextView
+                android:id="@+id/txtNewsTimeLeanth"
+                android:layout_width="wrap_content"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size10dp"
+                android:layout_marginTop="@dimen/size10dp"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/size14sp" />-->
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size200dp"
+            android:layout_marginTop="@dimen/size20dp">
+
+
+            <movi.ui.view.CustomVideoView
+                android:id="@+id/s_view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size200dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+
+
+            <ImageButton
+                android:id="@+id/btn_start_pause"
+                android:layout_width="@dimen/size40dp"
+                android:layout_height="@dimen/size40dp"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/imb_play_normal" />
+
+            <ProgressBar
+                android:id="@+id/pg_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+
+        </FrameLayout>
+        <!--   <com.tikou.mylibrary.UiSeeKBar
+                  android:layout_marginTop="50dp"
+                  android:id="@+id/sb"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:progressDrawable="@drawable/seek"
+                  android:maxHeight="20px"
+                  android:thumb="@mipmap/ic_normal"
+                  custom:numbackground="@mipmap/qqshow_2"
+                  custom:numType="bottom"
+                  custom:numTextColor="#FFFFFF"
+                  android:splitTrack="false"
+                  />-->
+
+
+       <SeekBar
+            android:id="@+id/sb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size20dp"
+            android:maxHeight="6dp"
+            android:minHeight="6dp"
+            android:progressDrawable="@drawable/seekbar_bac"
+            android:thumb="@mipmap/ic_normal" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="@dimen/size25do" />
+
+            <TextView
+                android:id="@+id/txtDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/size25do" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/size10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size10dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgPre"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="@dimen/size10dp"
+            android:src="@mipmap/imb_play_forward" />
+
+
+
+        <ImageView
+            android:id="@+id/imgNext"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@mipmap/imb_play_front" />
+
+    </LinearLayout>
+</LinearLayout>

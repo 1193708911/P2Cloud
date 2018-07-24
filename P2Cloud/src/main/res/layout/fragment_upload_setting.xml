@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#C9C9C9"
+        android:paddingBottom="@dimen/size10dp"
+        android:paddingLeft="@dimen/size10dp"
+        android:paddingTop="@dimen/size10dp"
+        android:text="视频分辨率"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/size16sp" />
+
+    <RelativeLayout
+        android:id="@+id/rl720"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/txt720"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/size10dp"
+            android:gravity="center_vertical"
+            android:text="1280*720(16:9)" />
+
+        <ImageView
+            android:id="@+id/img720"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/size10dp"
+            android:src="@mipmap/ic_select"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl480"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="@dimen/size5dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/txt480"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/size10dp"
+            android:text="640*480(4:3)" />
+
+        <ImageView
+            android:id="@+id/img480"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/size10dp"
+            android:src="@mipmap/ic_select" />
+    </RelativeLayout>
+
+    <!--暂时不支持-->
+    <RelativeLayout
+        android:id="@+id/rl360"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="@dimen/size5dp"
+        android:gravity="center_vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/txt360"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/size10dp"
+            android:gravity="center_vertical"
+            android:text="480*360(4:3)" />
+
+        <ImageView
+            android:id="@+id/img360"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/size10dp"
+            android:src="@mipmap/ic_select"
+            android:visibility="gone" />
+    </RelativeLayout>
+    <!--上载设置-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#C9C9C9"
+        android:paddingBottom="@dimen/size10dp"
+        android:paddingLeft="@dimen/size10dp"
+        android:paddingTop="@dimen/size10dp"
+        android:text="上载设置"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/size16sp" />
+
+    <RelativeLayout
+        android:id="@+id/rlSelfUpLoad"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/txtSelfUpLoad"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/size10dp"
+            android:gravity="center_vertical"
+            android:text="自动上载" />
+
+        <ImageView
+            android:id="@+id/imgSelfUpLoad"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/size10dp"
+            android:src="@mipmap/ic_select"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlBondUpLoad"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/txtBondUpLoad"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/size10dp"
+            android:gravity="center_vertical"
+            android:text="手动上载" />
+
+        <ImageView
+            android:id="@+id/imgBondUpLoad"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/size10dp"
+            android:src="@mipmap/ic_select" />
+    </RelativeLayout>
+
+
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#C9C9C9"
+        android:paddingBottom="@dimen/size10dp"
+        android:paddingLeft="@dimen/size10dp"
+        android:paddingTop="@dimen/size10dp"
+        android:text="画质设置"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/size16sp" />
+
+    <RelativeLayout
+        android:id="@+id/rlHigh"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/txtHigt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/size10dp"
+            android:gravity="center_vertical"
+            android:text="高质量  (650kb/s)" />
+
+        <ImageView
+            android:id="@+id/imgHigh"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/size10dp"
+            android:src="@mipmap/ic_select"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlCenter"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/txtCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/size10dp"
+            android:gravity="center_vertical"
+            android:text="中质量  (330kb/s)" />
+
+        <ImageView
+            android:id="@+id/imgCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/size10dp"
+            android:src="@mipmap/ic_select" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rlLov"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/txtLov"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/size10dp"
+            android:gravity="center_vertical"
+            android:text="低质量  (120kb/s)" />
+
+        <ImageView
+            android:id="@+id/imgLov"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:visibility="gone"
+            android:layout_marginRight="@dimen/size10dp"
+            android:src="@mipmap/ic_select" />
+    </RelativeLayout>
+</LinearLayout>

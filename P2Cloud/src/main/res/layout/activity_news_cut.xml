@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size40dp"
+        android:background="@mipmap/background"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtBack"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:paddingLeft="@dimen/size10dp"
+            android:text="返回"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="本地视频剪辑"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/size16sp" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size10dp"
+        android:layout_marginRight="@dimen/size10dp"
+        android:layout_marginTop="@dimen/size10dp"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="@dimen/size40dp">
+
+            <io.vov.vitamio.widget.VideoView
+                android:id="@+id/mVideoView"
+                android:layout_width="match_parent"
+                android:layout_height="150dp" />
+
+            <ImageView
+                android:id="@+id/img_bac"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size150dp"
+                android:scaleType="centerCrop" />
+
+            <ProgressBar
+                android:id="@+id/pg_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size20dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgBack"
+                    android:layout_width="@dimen/size40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/imb_play_forward" />
+
+                <ImageView
+                    android:id="@+id/imgPlay"
+                    android:layout_width="@dimen/size40dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/imb_play_normal" />
+
+                <ImageView
+                    android:id="@+id/imgTo"
+                    android:layout_width="@dimen/size40dp"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/imb_play_front" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtAdd"
+                style="@style/BtnPaddingStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/size5dp"
+                android:layout_marginRight="@dimen/size10dp"
+                android:layout_marginTop="@dimen/size20dp"
+                android:background="@mipmap/ic_addsheet"
+                android:gravity="center"
+
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bac"
+    android:orientation="vertical">
+
+ <!--   <include layout="@layout/second_title" />-->
+
+    <LinearLayout
+        android:id="@+id/ll_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size20dp"
+            android:layout_marginTop="@dimen/size20dp"
+            android:text="合成发布列表"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/size14sp" />
+
+
+    <movi.ui.view.XListView
+        android:id="@+id/lv_synthesis"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/size10dp"
+        android:layout_marginLeft="@dimen/size10dp"
+        android:layout_marginRight="@dimen/size10dp"
+        android:listSelector="@null"
+        android:dividerHeight="0.2dp"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/syn_contaner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+</LinearLayout>

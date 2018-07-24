@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size60dp"
+    android:id="@+id/rl_second"
+    android:background="@mipmap/top_bac">
+    <TextView
+        android:id="@+id/txtBack"
+        android:layout_alignParentLeft="true"
+        android:layout_width="@dimen/size40dp"
+        android:visibility="visible"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:layout_height="match_parent"
+        android:text="返回"/>
+
+</RelativeLayout>

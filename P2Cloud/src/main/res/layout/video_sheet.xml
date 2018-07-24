@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/size10dp"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+
+        <TextView
+            android:id="@+id/txtNewsCut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:button="@null"
+            android:text="剪辑列表1"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/size14sp" />
+
+        <TextView
+            android:id="@+id/txtTimeLeanth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/size20dp"
+            android:button="@null"
+            android:text="时长00:00:00/5镜头"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/size12sp" />
+
+    </RelativeLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size150dp">
+
+        <ImageView
+            android:id="@+id/img_sheet"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size150dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_load"/>
+
+        <ProgressBar
+            android:visibility="gone"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pg_iv"
+            android:layout_gravity="center" />
+
+    </FrameLayout>
+
+
+    <SeekBar
+        android:id="@+id/sb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size20dp"
+        android:maxHeight="@dimen/size10dp"
+        android:minHeight="@dimen/size10dp"
+        android:progressDrawable="@drawable/seekbar_bac"
+        android:thumb="@mipmap/ic_normal"
+       />
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/size10dp"
+        android:layout_height="@dimen/size40dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/imgReturn"
+                android:layout_width="@dimen/size40dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/size40dp"
+                android:src="@mipmap/imb_play_forward" />
+
+
+            <ImageView
+                android:id="@+id/imgTo"
+                android:layout_width="@dimen/size40dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/size10dp"
+                android:src="@mipmap/imb_play_front" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/txtReCut"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="@dimen/size20dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size40dp"
+                android:gravity="center"
+                android:background="@mipmap/ic_setbac"
+                style="@style/BtnPaddingStyle"
+                android:textSize="@dimen/size14sp"
+                android:textColor="@android:color/white" />
+            <TextView
+                android:id="@+id/txtAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@mipmap/ic_add"
+                android:textSize="@dimen/size14sp"
+                android:layout_marginRight="@dimen/size10dp"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

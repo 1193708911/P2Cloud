@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/pagertitle" />
+
+   <!-- <FrameLayout
+        android:id="@+id/contaner"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></FrameLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#515151"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rlCloud"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/size10dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+
+            <ImageButton
+                android:clickable="false"
+                android:id="@+id/imgCloud"
+                android:layout_centerHorizontal="true"
+                android:focusable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size10dp"
+                android:background="@null"
+                android:src="@mipmap/cloud_press" />
+
+            <TextView
+                android:id="@+id/txt_cloud"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgCloud"
+                android:layout_marginTop="@dimen/size5dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:text="云端素材"
+                android:textColor="@android:color/white" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlCut"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/size10dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+
+            <ImageButton
+                android:clickable="false"
+                android:id="@+id/imgCut"
+                android:focusable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size10dp"
+                android:layout_centerHorizontal="true"
+                android:background="@null"
+                android:src="@mipmap/cut_normal" />
+
+            <TextView
+                android:id="@+id/txt_cut"
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgCut"
+                android:layout_marginTop="@dimen/size5dp"
+                android:gravity="center_horizontal"
+                android:text="新闻剪辑"
+                android:textColor="@android:color/white" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rlSheet"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/size10dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+
+            <ImageButton
+                android:clickable="false"
+                android:focusable="true"
+                android:id="@+id/imgSheet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size10dp"
+                android:layout_centerHorizontal="true"
+                android:background="@null"
+                android:src="@mipmap/sheet_normal" />
+
+            <TextView
+                android:id="@+id/txt_sheet"
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgSheet"
+                android:layout_marginTop="@dimen/size5dp"
+                android:gravity="center_horizontal"
+                android:text="新闻抽图"
+                android:textColor="@android:color/white" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlWenGao"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/size10dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+
+            <ImageButton
+                android:clickable="false"
+                android:focusable="true"
+                android:id="@+id/imgWengao"
+                android:layout_centerHorizontal="true"
+                android:layout_width="@dimen/size40dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="@dimen/size10dp"
+                android:background="@null"
+                android:src="@mipmap/wengao_normal" />
+
+            <TextView
+                android:id="@+id/txt_wengao"
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgWengao"
+                android:layout_marginTop="@dimen/size5dp"
+                android:gravity="center_horizontal"
+                android:text="新闻文稿"
+                android:textColor="@android:color/white" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlPic"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/size10dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+
+            <ImageButton
+                android:clickable="false"
+                android:focusable="true"
+                android:id="@+id/imgPic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size10dp"
+                android:layout_centerHorizontal="true"
+                android:background="@null"
+                android:src="@mipmap/pic_normal" />
+
+            <TextView
+                android:id="@+id/txt_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgPic"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/size5dp"
+                android:gravity="center_horizontal"
+                android:text="合成发布"
+                android:textColor="@android:color/white" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+-->
+
+</LinearLayout>
+
+

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="movi.activity.AdviseActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size40dp"
+        android:background="@color/colorRed"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtBack"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:paddingLeft="@dimen/size10dp"
+            android:text="返回"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="意见反馈"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/size16sp" />
+
+        <TextView
+            android:id="@+id/txtSend"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingRight="@dimen/size10dp"
+            android:text="发送"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size150dp"
+        android:layout_marginLeft="@dimen/size10dp"
+        android:layout_marginRight="@dimen/size10dp"
+        android:layout_marginTop="@dimen/size10dp"
+        android:background="@drawable/advise_drawable">
+
+        <EditText
+            android:id="@+id/etAdvise"
+            android:layout_width="match_parent"
+            android:textSize="@dimen/size14sp"
+            android:layout_height="@dimen/size200dp"
+            android:layout_alignParentBottom="true"
+            android:background="@null"
+            android:gravity="start"
+            android:hint="请输入反馈，我们将为您不断改进" />
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size40dp"
+        android:layout_marginLeft="@dimen/size10dp"
+        android:layout_marginRight="@dimen/size10dp"
+        android:layout_marginTop="@dimen/size10dp"
+        android:background="@drawable/advise_drawable"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/size5dp"
+            android:text="您的邮箱:"
+            android:textColor="@android:color/black" />
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:singleLine="true"
+            android:layout_alignParentBottom="true"
+            android:textSize="@dimen/size14sp"
+            android:layout_toLeftOf="@+id/ll_addPic"
+            android:background="@null"
+            android:hint="选填，以便我们给您回复" />
+
+    </LinearLayout>
+
+</LinearLayout>

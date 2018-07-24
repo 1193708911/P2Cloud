@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/P2Cloud.iml" filepath="$PROJECT_DIR$/P2Cloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/P2Cloud/P2Cloud-P2Cloud.iml" filepath="$PROJECT_DIR$/P2Cloud/P2Cloud-P2Cloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/VideoCrop/VideoCrop.iml" filepath="$PROJECT_DIR$/VideoCrop/VideoCrop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/VideoCropLibrary/VideoCropLibrary.iml" filepath="$PROJECT_DIR$/VideoCropLibrary/VideoCropLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mylibrary/mylibrary.iml" filepath="$PROJECT_DIR$/mylibrary/mylibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vitamio/vitamio.iml" filepath="$PROJECT_DIR$/vitamio/vitamio.iml" />
+    </modules>
+  </component>
+</project>

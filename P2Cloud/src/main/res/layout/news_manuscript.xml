@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bac"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/ll_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size20dp"
+        android:layout_marginRight="@dimen/size40dp"
+        android:layout_marginTop="@dimen/size20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/new_title"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/size14sp" />
+
+            <EditText
+                android:id="@+id/etManuTitle"
+                style="@style/StyleNewContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size10dp"
+                android:background="@android:color/white"
+                android:hint="@string/hint_news_title"
+                android:maxLength="255"
+                android:singleLine="true"
+                android:textSize="@dimen/size14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/size15dp"
+                android:text="@string/news_keyword"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/size14sp" />
+
+            <EditText
+                android:id="@+id/etKeyWord"
+                style="@style/StyleNewContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size10dp"
+                android:background="@android:color/white"
+                android:hint="@string/hint_news_keyword"
+                android:maxLength="255"
+                android:singleLine="true"
+                android:textSize="@dimen/size14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size200dp"
+            android:layout_marginTop="@dimen/size20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/news_manuscript"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/size14sp" />
+
+            <EditText
+                android:id="@+id/etWenGao"
+                style="@style/StyleNewContent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/size10dp"
+                android:background="@android:color/white"
+                android:gravity="top"
+                android:hint="@string/hint_news_manuscript"
+                android:textSize="@dimen/size14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/size16sp" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center_horizontal">
+
+
+                <TextView
+                    android:id="@+id/txtCommit"
+                    style="@style/BtnPaddingStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/ic_commit"
+                    android:gravity="center"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/txtSave"
+                    style="@style/BtnPaddingStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@mipmap/ic_save"
+                    android:gravity="center"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/txtTijiao"
+                    style="@style/BtnPaddingStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/round_btn"
+                    android:gravity="center"
+                    android:text="提交"
+                    android:textColor="@android:color/white"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

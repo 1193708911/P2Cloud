@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/btn_takepho"
+        android:layout_width="@dimen/size60dp"
+        android:text="拍摄"
+        android:textColor="@android:color/white"
+        android:background="@drawable/btn_shap"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:layout_height="@dimen/size60dp" />
+
+</RelativeLayout>

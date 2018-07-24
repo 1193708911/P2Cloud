@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bac"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size10dp"
+        android:layout_marginTop="@dimen/size20dp"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size10dp"
+            android:orientation="horizontal">
+
+
+
+            <TextView
+                android:id="@+id/txtNewsStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size10dp"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/size14sp" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size200dp"
+            android:layout_marginTop="@dimen/size20dp">
+
+            <io.vov.vitamio.widget.VideoView
+                android:id="@+id/s_view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size200dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+
+         <!--   <ImageView
+                android:id="@+id/img_vedio_bac"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@mipmap/ic_load"
+                android:visibility="gone" />-->
+
+            <ProgressBar
+                android:id="@+id/pg_iv"
+                android:layout_width="wrap_content"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+
+        </FrameLayout>
+
+
+        <SeekBar
+            android:id="@+id/sb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size20dp"
+            android:indeterminate="false"
+            android:maxHeight="@dimen/size5dp"
+            android:minHeight="@dimen/size5dp"
+            android:progressDrawable="@drawable/seekbar_bac"
+            android:thumb="@mipmap/ic_normal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size20dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imgReset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@mipmap/imb_pause" />
+
+            <ImageButton
+                android:id="@+id/imgPlays"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@mipmap/imb_play" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
